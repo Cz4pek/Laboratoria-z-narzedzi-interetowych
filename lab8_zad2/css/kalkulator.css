@@ -1,0 +1,22 @@
+body{
+    color: rgb(255, 102, 0);
+    font-size: larger;
+}
+article{
+
+    height: auto;
+    padding-bottom: 15%;
+
+}
+fieldset{
+    border-style: solid;
+    border: 10px;
+    border-color: #e6bfa9;
+
+}
+legend{
+    font-style: oblique; 
+    font-weight: bolder; 
+    font-size: 150%; 
+    color: #ffffff; 
+}

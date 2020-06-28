@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <title> Formularz dotacji</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <h3>Formularz dotacji</h3>
+    <div>
+        <form action="#" method="get">
+            <fieldset>
+                Beneficjent:
+                <input list="beneficjent" required name="beneficjent">
+                <datalist id="beneficjent">
+                    <option value="Hospicjum Małego Księcia">
+                    <option value="Wioski Dziecięcego sos">
+                    <option value="Fundacja Polsat">
+                    <option value="Fundacja Dzieciom">
+                </datalist>
+                <br />
+                Wielkość dotacji:
+                <input required type="number" name="dotacja" min="20" step="5"><br />
+            </fieldset>
+            <br />
+            <fieldset>
+                <legend>Dane karty płatniczej</legend>
+                Karta:
+                <input type="radio" name="karta" value="visa">Visas
+                <input type="radio" name="karta" value="Master Card">Master Card<br />
+                <br />
+                Numer: <input required type="text" name="numer karty" placeholder="xxxxxxxxxxxxx"
+                    pattern="(^[0-9]{13}$)|(^[0-9]{16}$)"><br />
+                Data ważności: <input type="month" name="data waznosci" required> <br />
+                Kod CVV:<input required type="text" name="cvv" pattern="(^[0-9]{3,4}$)"><br />
+            </fieldset>
+            Darczyńca <input type="text" name="darczynca" required
+                pattern="^[A-ZŁĄŹŻĆĄŚ][a-zążśźćł]{2,15}\s[A-ZŁĄŹŻĆĄŚ][a-zążśźćł]{2,15}-?[A-ZŁĄŹŻĆĄŚ][a-zążśźćł]{2,15}$">
+            <input type="submit" value="Rejestruj">
+            <input type="reset" value="Wyczyść">
+        </form>
+    </div>
+</body>
+
+</html>

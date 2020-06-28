@@ -1,0 +1,27 @@
+table{
+    background-color: #c4c9b1;
+    text-align: center;
+    width: 94%;
+    margin: 2%;
+    border: 3pt #ef9d87 groove;
+ }
+ caption{
+    font-size: 120%;
+    font-weight: bold;
+ }
+ tfoot, thead, tbody{
+    background-color: #c4c9b1;
+    color:#ef9d87;
+ }
+ td, th{
+    border: 3pt solid black;
+    border-top-left-radius: 25%;
+    border-bottom-right-radius: 25%;
+ }
+ tfoot a{
+    color: rgb(255, 167, 51);
+ }
+
+tr:nth-child(2n) {
+    background: #a5aa94;
+}

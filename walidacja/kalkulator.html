@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <title> Kalkulator</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <h3>Kalkulator faktur</h3>
+    <div>
+        <form oninput="netto.value=parseInt(x.value)+parseInt(x.value)*parseInt(y.value)/100">
+            Wartość netto: <input required type="number" id="x" name="dotacja" value="1850" min="0"> PLN <br />
+            Stawka VAT: <input required type="number" id="y" name="dotacja" value="23" min="0" max="100"> % <br />
+            Wartość brutto: <output name="netto" for="x y"></output>
+        </form> 
+    </div>
+</body>
+
+</html>

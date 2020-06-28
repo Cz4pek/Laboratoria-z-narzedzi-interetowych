@@ -1,0 +1,186 @@
+body {
+    background: #bf9a7f;
+    color: #934a44;
+    margin: 0;
+}
+h2 {
+    text-align: center;
+    background: #934a44;
+    color: #e8d1cb;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0%;
+}
+
+footer {
+    background: #934a44;
+    color: #e8d1cb;
+    text-align: center;
+    clear: both;
+    width: 100%;
+    padding: 5px 0 5px 0;
+    position: relative;
+    animation: latjacyHolender 1s forwards;
+}
+@keyframes latjacyHolender {
+    from {bottom: -100px;}
+    to {bottom: 0px;}
+}
+nav {   
+    text-align: left;
+    overflow: hidden;
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 1em;
+}
+
+nav a {
+    text-decoration-line: none;
+}
+
+nav ul {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+nav ul li {
+    margin-left: 3px;
+    border: 1px dotted #934a44;
+    background: #3b3b3b;
+}
+
+nav ul li:hover {
+    list-style-type: none;
+    margin-left: 3px;
+    border: 1px dotted #f4f3df;
+    background: #4f5a4c;
+}
+
+nav ul li a {
+    color: #bf9a7f;
+    text-decoration-style: unset;
+    padding: 4pt;
+    display: block;
+}
+
+nav ul li li a {
+    width: min-content;
+}
+
+nav ul li li:hover {
+    background: #934a44;
+    width: 160px;
+}
+nav ul li li{
+    width: 160px;
+}
+
+nav ul li ul {
+    overflow: hidden;
+    display: none;
+}
+
+nav ul li:hover ul {
+    position: absolute;
+    /* background: #e8d1cb; */
+    padding: 0%;
+    display: block;
+    width: inherit;
+}
+
+article {
+    background: #4f5a4c;
+    color: #e8d1cb;
+    float: left;
+    padding: 1%;
+    width: 60%;
+}
+
+article a {
+    color: #3b3b3b;
+}
+
+aside {
+    float: right;
+    width: 16%;
+    padding: 1%;
+}
+
+main {
+    background: #e8d1cb;
+    width: 80%;
+    margin: auto;
+}
+
+*.box {
+    background: #4f5a4c;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #bf9a7f;
+    padding: 5px;
+    margin: 5px;
+    font-size: 90%;
+    box-shadow: 5px 10px;
+}
+
+*.box a {
+    color: #e8d1cb;
+}
+
+@media screen and ( max-width: 1280px) {
+    nav {
+        width: 70%;
+    }
+    nav li{
+        width: 40%;
+    }
+}
+
+@media screen and ( max-width: 940px) {
+    nav {
+        width: 50%;
+    }
+    nav li{
+        width: 100%;
+    }
+    nav ul li a{
+        width: 75%;
+        margin: auto;
+    }
+    nav ul {
+        flex-direction: column;
+        padding: 0;
+        text-align: center;
+    }
+    nav ul li li{
+        width: 88.5%;
+    }
+    nav ul li li:hover {
+        width: 88.5%;
+    }
+
+    nav ul li li a{
+        width: 88.5%;
+    }
+    main{
+        max-width: 95%;
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        flex-direction: column;
+    }
+    aside{
+        width: 95%;
+        align-self: center;
+    }
+    article{
+        width: 95%;
+        align-self: center;
+
+    }
+    nav{
+        width: 95%;
+        align-self: center;
+    }
+
+}

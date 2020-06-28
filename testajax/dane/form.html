@@ -1,0 +1,22 @@
+<h2><br/>Dodaj post</h2>
+<article class="srodek">
+    <form action="mailto:b.panczyk@pollub.pl" method="post" onsubmit="return pokazDane();">
+        Twój email:<br/> <input type="email" name="email" id="email" required/><br/>
+        Nazwisko i Imię: <br/> <input type="text" title="Prosze podać imię i nazwisko" name="imie" id="imie" required
+                                      pattern="^[A-ZŁĄŹŻĆĄŚ][a-zążśźćł]{1,25} [A-ZŁĄŹŻĆĄŚ][a-zążśźćł]{1,25}$"/><br/>
+        Telefon: <br/> <input type="text" title="nr telefonu składa się z 9 cyfr np. 123456789" name="numer" id="numer"
+                              required pattern="[0-9]{9}"/><br/>
+        <br/>Zainteresowania: <br/> <input type="checkbox" name="zainteresowania" id="sport" value="Sport"> Sport
+        <input type="checkbox" name="zainteresowania" id="muzyka" value="Muzyka"> Muzyka
+        <input type="checkbox" name="zainteresowania" id="film" value="Film"> Film
+        <input type="checkbox" name="zainteresowania" id="inne" value="Inne"> Inne <br/>
+        <br/>Wiek: <br/> <input type="radio" name="wiek" id="Mniej niż 10" value="Mniej niż 10"> Mniej niż 10
+        <input type="radio" name="wiek" id="10-20" value="10-20"> 10-20
+        <input type="radio" name="wiek" id="21-30" value="21-30"> 21-30
+        <input type="radio" name="wiek" id="31-40" value="31-40"> 31-40
+        <input type="radio" name="wiek" id="41-50" value="41-50"> 41-50
+        <input type="radio" name="wiek" id="Więcej niż 50" value="Więcej niż 50"> Więcej niż 50 <br/><br/>
+        Komentarz: <br/><textarea rows="3" cols="20" id="wiadomosc" name="wiadomosc" required></textarea><br/>
+        <br/> <input type="submit" name="wyslij" value="Wyślij"/>
+    </form>
+</article>
